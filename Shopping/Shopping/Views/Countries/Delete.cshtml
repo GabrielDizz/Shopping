@@ -8,7 +8,7 @@
 
 <h3>¿Estás seguro(a) de que quieres eliminar este País? </h3>
 <div>
-    <h4>Países</h4>
+    @*<h4>País</h4>*@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -18,10 +18,10 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
     </dl>
-    
+    <br />
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Eliminar" class="btn btn-outline-danger" /> |
-        <a asp-action="Index" class="btn btn-outline-success">Volver a la lista</a>
+        <input type="submit" value="Eliminar" class="btn btn-outline-danger" /> 
+        <a asp-action="Index" class="btn btn-outline-success">Regresar</a>
     </form>
 </div>
